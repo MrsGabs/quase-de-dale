@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet</title>
+  <link rel="stylesheet" href="assets/reset.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <meta name="description"
+    content="Projeto Diet | Nossa ideia é criar um site para ajudar as pessoa diabeticas a fazer seus calculos de insulina">
+</head>
+
+<body>
+  <header class="icons-header">
+
+    <img class="logo" src="assets/images/logo.svg" draggable="false" alt="">
+    <div>
+      <div class="button" id="admin">Admin</div>
+      <a href="/register">
+        <div class="button">Cadastrar</div>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="text-top">Conheça nosso projeto:</h1>
+    <h2 class="verde">Diet</h2>
+    <p class="inicial-p">
+      O nosso projeto vai ajudar pessoas diabéticas a calcular a quantidade de insulina a ser aplicada para que o nosso
+      cliente não injete a dose errada e corra risco de vida. Isso facilitará na hora de calcular a quantidade de
+      carboidratos que poderá ser consumido por ela.
+    </p>
+
+    <h2>Funções que nosso app oferece:</h2>
+    <div class="center">
+      <div class="diferenciais">
+        <div class="diferencial-single">
+          <ion-icon class="svg" name="newspaper-outline"></ion-icon>
+          <h2>Contagem de Carboidratos</h2>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="diferencial-single">
+          <ion-icon class="svg" name="calculator-outline"></ion-icon>
+          <h2>Calculo de dose</h2>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="diferencial-single">
+          <ion-icon class="svg" name="reader-outline"></ion-icon>
+          <h2>Diário de glicemia</h2>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="/register">
+      <div class="button middle">Começe agora!</div>
+    </a>
+
+    <h2>Notícias:</h2>
+    <div class="center">
+      <% for (var i=0; i<textImg.length;i++){%>
+      <div class="box-noticia">
+        <a href="/news">
+          <div class="noticia">
+            <a href="/news?id=<%=textImg[i]._id%>" class="btn btn-warning">
+            <img src="./uploads/<%=textImg[i].arquivo%>" draggable="false" alt="Notícia 1">
+            </a>
+              <h3> <strong><%=textImg[i].titulo%></strong>  </h3>
+              <p><%=textImg[i].texto%></p>
+          </div>
+        </a>
+      </div>
+      <%}%>
+    </div>
+    
+    
+
+  </main>
+
+  <div class="waves">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+  </div>
+  <footer>
+
+    <a href="/aboutus">
+      <h1 class="about-us">Clique aqui para nos conhecer!</h1>
+    </a>
+
+    <a href="#" class="pagina-topo">
+      <ion-icon class="pagina-topo" name="caret-up-outline"></ion-icon>
+    </a>
+    </div>
+
+    <div>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+    <div>
+      <h2 class="copy">&#169;2022 - Diet</h2>
+    </div>
+
+  </footer>
+  <script src="/assets/senhaAdmin.js"></script>
+</body>
+
+</html>

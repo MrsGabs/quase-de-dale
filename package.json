@@ -1,0 +1,27 @@
+{
+  "name": "2emia-projeto-main",
+  "version": "1.0.0",
+  "description": "![GitHub](https://img.shields.io/github/license/dav1s0707/2emia-projeto) <p>     <a href=\"https://jigsaw.w3.org/css-validator/check/referer\">         <img style=\"border:0;width:88px;height:31px\"             src=\"https://jigsaw.w3.org/css-validator/images/vcss-blue\"             alt=\"CSS válido!\" />     </a> </p>  <img              src=\"https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fdav1s0707.github.io%2F2emia-projeto%2Findex.html\"             alt=\"HTML válido!\" />",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
